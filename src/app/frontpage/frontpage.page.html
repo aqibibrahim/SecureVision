@@ -1,0 +1,91 @@
+<ion-header >
+    <ion-toolbar>
+        <!-- <ion-buttons left>
+            <button ion-button icon-only menuToggle start>
+                <ion-icon name="menu"></ion-icon>
+              </button>
+        </ion-buttons> -->
+      <ion-title>Emergency</ion-title>
+      <!-- <ion-title end>Rawalpindi</ion-title> -->
+      <!-- <ion-buttons end>
+          <button ion-button (click)="opencontact()">
+            <ion-icon name="book"></ion-icon>
+        </button>
+        </ion-buttons>
+      <ion-buttons end>
+          <button ion-button (click)="savedata()">
+          Map
+        </button>
+        </ion-buttons> -->
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-input placeholder="Family Contact" ></ion-input>
+      </ion-item>
+         
+
+      <ion-item>
+        <ion-input placeholder="Police Line " ></ion-input>
+      </ion-item>
+  
+    
+      <ion-item>
+        <ion-input placeholder="Clinic" ></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Nearest Points</ion-label>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Select One">
+            <ion-select-option value="brown">Nearest Clinic</ion-select-option>
+            <ion-select-option value="blonde">Nearest Rescue</ion-select-option>
+            <!-- <ion-select-option value="black" [routerLink]="['/home']">Nearest Doctor</ion-select-option> -->
+            <ion-select-option value="red">Nearest Police</ion-select-option>
+          </ion-select>
+        </ion-item>
+    <!-- <ion-item>
+          <ion-input placeholder="Blood Group" ></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-input placeholder="Mobile #"></ion-input>
+        </ion-item>
+     <ion-item>
+            <ion-input placeholder="Conveyence (Yes/No)"></ion-input>
+        </ion-item> -->
+  <!-- <ion-row>
+    <ion-col text-center>
+      <ion-button [routerLink]="['/home']">
+        <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
+        &nbsp;Find Help
+      </ion-button>
+    </ion-col>
+  </ion-row> -->
+  <!-- <ion-item style="border-bottom: 0.3px solid">
+      <ion-label color="lightblue">Find Help</ion-label>  
+      <ion-select [(ngModel)]="gaming" interface="popover">
+          <ion-option value="dr">Dr.</ion-option>
+          <ion-option value="Mr">Mr.</ion-option>
+          <ion-option value="Ms">Ms.</ion-option>
+          <ion-option value="Mrs">Mrs.</ion-option>
+          <ion-option value="Miss">Miss.</ion-option>
+        </ion-select>
+      </ion-item> -->
+
+  <!-- <ion-row>
+    <ion-col text-center>
+      <ion-button [routerLink]="['/doctor']">
+        <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
+        &nbsp;Register As A Doctor
+      </ion-button>
+    </ion-col>
+  </ion-row> -->
+  <!-- <ion-row>
+    <ion-col text-center>
+      <ion-button [routerLink]="['/register']">
+        <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
+        &nbsp;Register As A Patient
+      </ion-button>
+    </ion-col>
+  </ion-row> -->
+</ion-content>

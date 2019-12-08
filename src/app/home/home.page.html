@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Nearest Clinic
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="grad">
+ 
+  <ion-grid fixed>
+    
+  </ion-grid>
+ 
+  <ion-list *ngFor="let item of attendance" >
+      
+       <ion-row>
+         <ion-col >
+            <h2 style="color: black;">Al Shifa</h2>
+         </ion-col>
+         <ion-col >
+            <h3 style="color: red; float: right;">17.07</h3>
+         </ion-col>
+       </ion-row>
+        <!-- <ion-row>
+          <ion-col>
+              <p style="color: black;">{{item.cell}} </p>
+          </ion-col>
+        </ion-row> -->
+        <ion-row>
+          <ion-col>
+              <a href="https://wa.me/item.cell?text=Emergency">Message</a>
+              <!-- <p style="color: grey;">1122</p> -->
+          </ion-col>
+          <!-- <ion-col>
+              <p style="color: green; float: right;" >17.07 miles</p>
+          </ion-col> -->
+        </ion-row>
+    </ion-list>
+    <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button [routerLink]="['/register']">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button [routerLink]="['/doctor']">Add Doctor
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab> -->
+</ion-content>

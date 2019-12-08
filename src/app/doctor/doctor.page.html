@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Doctor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+       
+          <ion-item>
+            <ion-input placeholder="Enter Name" [(ngModel)]="doctorName"></ion-input>
+          </ion-item>
+             
+
+          <ion-item>
+            <ion-input placeholder="PMDC #" [(ngModel)]="pmdc"></ion-input>
+          </ion-item>
+      
+        
+          <ion-item>
+            <ion-input placeholder="Cell #" [(ngModel)]="cell"></ion-input>
+          </ion-item>
+      
+     
+    
+      
+          <ion-item>
+              <ion-input placeholder="End to" [(ngModel)]="endto"></ion-input>
+          </ion-item>
+       
+       
+            <ion-item>
+                <ion-input placeholder="Gender" [(ngModel)]="gender"></ion-input>
+            </ion-item>
+         
+  
+        
+            <!-- <ion-item>
+                <ion-input placeholder="Conveyence (Yes/No)" [(ngModel)]="conveyence"></ion-input>
+            </ion-item> -->
+         
+     
+      <ion-row>
+        <ion-col text-center>
+          <ion-button (click)="CreateRecord()" [disabled]="!doctorName || !pmdc || !cell || !endto">
+            <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
+            &nbsp;Add as a Donor
+          </ion-button>
+        </ion-col>
+      </ion-row>
+</ion-content>

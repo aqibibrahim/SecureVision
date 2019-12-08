@@ -1,0 +1,7 @@
+{
+  "name": "BloodDonor",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
